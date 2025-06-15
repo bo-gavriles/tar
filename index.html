@@ -3,153 +3,99 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>TAR.UY - Construcción, Industria, Comercios y Servicios; trabajos en altura, tareas de alto riesgo, alquiler de equipos y herramientas</title>
-  <meta name="description" content="Empresa uruguaya dedicada a tareas de riesgo en obras de construcción, trabajos en altura y alquiler de equipos y herramientas profesionales. Soluciones para particulares y empresas." />
-  <meta name="keywords" content="construcción en Uruguay, trabajos en altura, alquiler de herramientas, alquiler de equipos, obras civiles, albañilería, herramientas eléctricas Montevideo, alpinismo industrial, trabajos especiales en obras de construcción, trabajos en caliente, trabajos en espacios confinados, trabajos en cubiertas inclinadas." />
-  <style>
-    body {
-      margin: 0;
-      font-family: 'Arial', sans-serif;
-      background-color: #f5ecd7;
-      color: #222;
-    }
-    header {
-      background-color: #f5ecd7;
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      padding: 2rem;
-      border-bottom: 4px solid #111;
-    }
-    header h1 {
-      font-size: 2.5rem;
-      color: #111;
-      margin: 0;
-    }
-    .hero {
-      text-align: center;
-      padding: 2rem 1rem;
-    }
-    .hero h2 {
-      font-size: 2rem;
-      font-weight: bold;
-      margin-bottom: 1rem;
-    }
-    .section {
-      padding: 2rem 1rem;
-      max-width: 900px;
-      margin: auto;
-    }
-    .section h3 {
-      font-size: 1.6rem;
-      border-left: 5px solid #ff8800;
-      padding-left: 1rem;
-      margin-bottom: 1rem;
-    }
-    ul {
-      padding-left: 1.5rem;
-    }
-    ul li {
-      margin-bottom: 0.5rem;
-    }
-    .contact {
-      background-color: #111;
-      color: #fff;
-      padding: 2rem 1rem;
-      text-align: center;
-    }
-    .contact a {
-      color: #ff8800;
-      text-decoration: none;
-      font-weight: bold;
-    }
-    footer {
-      text-align: center;
-      padding: 1rem;
-      font-size: 0.9rem;
-      background: #f5ecd7;
-      border-top: 1px solid #ccc;
-    }
-    @media (max-width: 600px) {
-      header h1 {
-        font-size: 2rem;
-      }
-      .hero h2 {
-        font-size: 1.5rem;
-      }
-      .section h3 {
-        font-size: 1.3rem;
-      }
-    }
-  </style>
+  <title>TAR.UY – Construcción, Altura y Alquiler</title>
+  <meta name="description" content="Obras, trabajos en altura y alquiler de herramientas en Uruguay. Empresa con experiencia, equipos certificados y cobertura nacional." />
+  <meta name="keywords" content="construcción Uruguay, trabajos en altura, alquiler de herramientas, reformas, alpinismo industrial, andamios, herramientas eléctricas Montevideo, maquinaria de obra, poda en altura" />
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
 </head>
-<body>
-  <header>
-    <h1>TAR.UY</h1>
-    <img src="b.png" width="60" />
+<body class="bg-gray-900 text-white font-sans">
+
+  <!-- Header -->
+  <header class="p-6 bg-yellow-500 text-gray-900 flex justify-between items-center">
+    <h1 class="text-xl font-bold">TAR.UY</h1>
+    <nav class="space-x-4 text-sm">
+      <a href="#" class="hover:underline">Inicio</a>
+      <a href="#servicios" class="hover:underline">Servicios</a>
+      <a href="#contacto" class="hover:underline">Contacto</a>
+    </nav>
   </header>
 
-  <div class="hero">
-    <h1>Servicios de construcción y trabajos en altura — TAR.UY</h2>
-    <h2>Somos especialistas en obras, riesgo y herramientas. Confiabilidad. Técnica. Precisión.</p>
-  </div>
+  <!-- Hero -->
+  <section class="bg-gray-800 p-10 text-center">
+    <h2 class="text-3xl md:text-4xl font-bold mb-4">Construcción, trabajos de riesgo y alquiler de herramientas en Uruguay</h2>
+    <p class="text-lg text-gray-300 mb-6">Obras completas, servicios en altura, y todo el equipamiento que necesitás.</p>
+    <div class="space-x-4">
+      <a href="#diagnostico" class="bg-yellow-500 text-gray-900 px-6 py-3 rounded font-bold hover:bg-yellow-400">📋 Pedir presupuesto</a>
+      <a href="#contacto" class="bg-transparent border border-yellow-500 text-yellow-500 px-6 py-3 rounded font-bold hover:bg-yellow-500 hover:text-gray-900">💬 Contactar</a>
+    </div>
+  </section>
 
-  <div class="section">
-    <h3>Construcción y reformas integrales en Uruguay</h3>
-    <ul>
-      <li>Movimiento de tierra y fundaciones</li>
-      <li>Albañilería general (bloques, ladrillos, hormigón)</li>
-      <li>Techos: instalación, impermeabilización, aislación</li>
-      <li>Electricidad, agua y saneamiento</li>
-      <li>Revoques, terminaciones y pintura</li>
-      <li>Construcción de casas, depósitos, estructuras metálicas</li>
-    </ul>
-  </div>
+  <!-- Servicios -->
+  <section id="servicios" class="p-10 bg-gray-900">
+    <h3 class="text-2xl font-semibold mb-6 text-center">Nuestros Servicios</h3>
+    <div class="grid md:grid-cols-3 gap-6 text-sm text-gray-200">
+      <div class="bg-gray-800 p-4 rounded">
+        <h4 class="font-bold mb-2">Construcción y reformas</h4>
+        <ul class="list-disc list-inside text-gray-400 text-sm">
+          <li>Movimiento de tierra y fundaciones</li>
+          <li>Albañilería general</li>
+          <li>Techado y aislamiento</li>
+          <li>Electricidad y saneamiento</li>
+          <li>Pintura y terminaciones</li>
+          <li>Estructuras metálicas y más</li>
+        </ul>
+      </div>
+      <div class="bg-gray-800 p-4 rounded">
+        <h4 class="font-bold mb-2">Trabajos en altura</h4>
+        <ul class="list-disc list-inside text-gray-400 text-sm">
+          <li>Limpieza de fachadas</li>
+          <li>Instalación de antenas y cartelería</li>
+          <li>Reparación de techos</li>
+          <li>Poda y tala en altura</li>
+          <li>Accesos difíciles y espacios confinados</li>
+        </ul>
+      </div>
+      <div class="bg-gray-800 p-4 rounded">
+        <h4 class="font-bold mb-2">Alquiler de herramientas</h4>
+        <ul class="list-disc list-inside text-gray-400 text-sm">
+          <li>Taladros, martillos, sierras</li>
+          <li>Soldadoras y compresores</li>
+          <li>Generadores, reflectores</li>
+          <li>Mezcladoras, vibradores, placas</li>
+          <li>Andamios, escaleras, torres móviles</li>
+          <li>Bombas de agua y más</li>
+        </ul>
+        <p class="mt-2 text-gray-400 text-xs">Alquiler diario, semanal o mensual. Entrega disponible.</p>
+      </div>
+    </div>
+  </section>
 
-  <div class="section">
-    <h3>Trabajos en altura y espacios confinados</h3>
-    <ul>
-      <li>Limpieza de vidrios y fachadas</li>
-      <li>Reparaciones en techos y juntas</li>
-      <li>Instalación de carteles, antenas, aires acondicionados</li>
-      <li>Poda y tala controlada de árboles</li>
-      <li>Acceso por cuerda en espacios reducidos</li>
-    </ul>
-  </div>
+  <!-- Diagnóstico / Presupuesto -->
+  <section id="diagnostico" class="p-10 bg-gray-800 text-center">
+    <h3 class="text-2xl font-semibold mb-4">Solicitá tu presupuesto gratuito</h3>
+    <p class="text-gray-400 mb-6">Contanos qué necesitás y te respondemos en menos de 24h.</p>
+    <form class="max-w-xl mx-auto space-y-4 text-gray-900">
+      <input type="text" placeholder="Nombre de la empresa o persona" class="w-full p-3 rounded" />
+      <input type="text" placeholder="Teléfono de contacto" class="w-full p-3 rounded" />
+      <input type="email" placeholder="Correo electrónico" class="w-full p-3 rounded" />
+      <input type="text" placeholder="Tipo de servicio requerido" class="w-full p-3 rounded" />
+      <textarea placeholder="Detalles del proyecto o herramientas que buscás" class="w-full p-3 rounded"></textarea>
+      <button type="submit" class="bg-yellow-500 px-6 py-3 font-bold rounded hover:bg-yellow-400">Enviar solicitud</button>
+    </form>
+  </section>
 
-  <div class="section">
-    <h3>Alquiler de herramientas y maquinaria</h3>
-    <ul>
-      <li>Taladros, martillos, amoladoras, sierras, atornilladores</li>
-      <li>Soldadoras, lijadoras, rotomartillos</li>
-      <li>Compresores, generadores, reflectores industriales</li>
-      <li>Mezcladoras, vibradores, placas compactadoras</li>
-      <li>Andamios, escaleras, torres móviles</li>
-      <li>Bombas de agua, herramientas para plomería</li>
-    </ul>
-    <p>Alquiler diario, semanal o mensual. Entrega disponible. Pack de autoconstrucción disponible.</p>
-  </div>
+  <!-- Contacto -->
+  <section id="contacto" class="p-10 bg-gray-900 text-center">
+    <h3 class="text-2xl font-semibold mb-4">Contacto</h3>
+    <p class="text-gray-400 mb-2">📧 contacto@tar.uy</p>
+    <p class="text-gray-400 mb-2">📞 +598 977 58 938</p>
+    <p class="text-gray-400">💬 WhatsApp disponible</p>
+  </section>
 
-  <div class="section">
-    <h3>¿Por qué elegir TAR.UY?</h3>
-    <ul>
-      <li>Más de 10 años de experiencia en trabajos complejos</li>
-      <li>Certificación en altura y seguridad (IRAM / ANSI / CE)</li>
-      <li>Cobertura en Montevideo, Canelones e interior</li>
-      <li>Servicio de alquiler confiable con stock real</li>
-      <li>Atención directa y sin intermediarios</li>
-    </ul>
-  </div>
-
-  <div class="contact">
-    <h3>Contacto directo</h3>
-    <p>WhatsApp: <a href="#">+598 977 58 938</a></p>
-    <p>Email: <a href="mailto:contacto@tar.uy">industial@tar.uy</a></p>
-  </div>
-
-  <footer>
-    &copy; 2025 TAR.UY — Todos los derechos reservados.
+  <!-- Footer -->
+  <footer class="bg-gray-800 p-4 text-center text-xs text-gray-500">
+    © 2025 TAR.UY — Construcción, altura y alquiler en Uruguay
   </footer>
+
 </body>
 </html>
-
